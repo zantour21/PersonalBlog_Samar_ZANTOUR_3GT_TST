@@ -19,7 +19,7 @@ export class PostDetailsComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.post = this.postService.getPostById(id);
     if (!this.post) {
-      console.log('Post not found'); // debugging: the added post does not appear in the posts list
+      console.log('Post not found'); 
     }
   }
 }

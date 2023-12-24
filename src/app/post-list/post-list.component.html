@@ -1,0 +1,10 @@
+<div class="post-list">
+  <div class="post-item" *ngFor="let post of posts">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <span>
+      <button (click)="modifyPost(post.id)" class="modify-button">Modify</button> 
+      <button (click)="deletePost(post.id)">Delete</button>
+    </span>
+  </div>
+</div>
